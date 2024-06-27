@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Citas Odontologicas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="assets/img/favoicon.png" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="dashboard.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo-Oral-Clinic-Plus.svg" alt="">
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Buscar" title="Introduce palabra clave de búsqueda">
+        <button type="submit" title="Buscar"><i class="bi bi-search"></i></button>
+      </form>
+    </div>    
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">0</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              No hay notificaciones
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+          </ul>
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">0</span>
+          </a><!-- End Messages Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              No hay mensajes
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/usuario.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Admin</h6>
+              <span>Administrador</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="usuario.html">
+                <i class="bi bi-person"></i>
+                <span>Mi Perfil</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="usuario.html">
+                <i class="bi bi-gear"></i>
+                <span>Configuración de la Cuenta</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="iniciar_sesion.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Cerrar Sesión</span>
+              </a>
+            </li>
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Inicio</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Personal-medico.html">
+          <i class="bi bi-person"></i>
+          <span>Personal</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Pacientes.html">
+          <i class="bi bi-people"></i>
+          <span>Pacientes</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Citas.html">
+          <i class="bi bi-card-list"></i>
+          <span>Citas Odontologicas</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Ordenes.html">
+          <i class="bi bi-postcard"></i>
+          <span>Ordenes Odontologicas</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Recetas.html">
+          <i class="bi bi-book"></i>
+          <span>Recetas Odontologicas</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Preguntas.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="Contacto.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contacto</span>
+        </a>
+      </li>
+    </ul>
+
+  </aside><!-- End Sidebar-->
+ <main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Cita Médica</h1>
+    </div>
+    <section class="section profile">
+        <div class="main-content p-3">
+            <div class="card card-custom border-0 p-2">     
+                <div class="profile-edit p-3">
+                    <div class="pagetitle text-center">
+                        <h1>Solicitud de Citas Odontológicas</h1>
+                        <hr>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="fechaNacimiento" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="genero" class="form-label">Género</label>
+                            <select class="form-select" id="genero" required>
+                                <option value="">Selecciona tu género</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Número de Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipoConsulta" class="form-label">Tipo de Consulta</label>
+                            <select class="form-select" id="tipoConsulta" required>
+                                <option value="">Selecciona el tipo de consulta</option>
+                                <option value="general">Consulta General</option>
+                                <option value="especialista">Consulta con Especialista</option>
+                                <option value="odontologia" selected>Consulta de Odontología</option>
+                                <option value="urgencias">Urgencias</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaPreferida" class="form-label">Fecha</label>
+                            <input type="date" class="form-control" id="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horaPreferida" class="form-label">Hora</label>
+                            <input type="time" class="form-control" id="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notas" class="form-label">Notas Adicionales</label>
+                            <textarea class="form-control" id="notas" rows="3" placeholder=""></textarea>
+                        </div>
+                        <div class="">
+                            <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span> OralClinicPlus-2024</span></strong>. Todos los derechos reservados
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Desarrollado por <a href="">Carlos Eduardo Correa Baloco</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Recetas Odontologícas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="assets/img/favoicon.png" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="dashboard.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo-Oral-Clinic-Plus.svg" alt="">
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Buscar" title="Introduce palabra clave de búsqueda">
+        <button type="submit" title="Buscar"><i class="bi bi-search"></i></button>
+      </form>
+    </div>    
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">0</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              No hay notificaciones
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+          </ul>
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">0</span>
+          </a><!-- End Messages Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              No hay mensajes
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/usuario.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Admin</h6>
+              <span>Administrador</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="usuario.html">
+                <i class="bi bi-person"></i>
+                <span>Mi Perfil</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="usuario.html">
+                <i class="bi bi-gear"></i>
+                <span>Configuración de la Cuenta</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="iniciar_sesion.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Cerrar Sesión</span>
+              </a>
+            </li>
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Inicio</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Personal-medico.html">
+          <i class="bi bi-person"></i>
+          <span>Personal</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Pacientes.html">
+          <i class="bi bi-people"></i>
+          <span>Pacientes</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Citas.html">
+          <i class="bi bi-card-list"></i>
+          <span>Citas Odontologicas</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Ordenes.html">
+          <i class="bi bi-postcard"></i>
+          <span>Ordenes Odontologicas</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Recetas.html">
+          <i class="bi bi-book"></i>
+          <span>Recetas Odontologicas</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Preguntas.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="Contacto.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contacto</span>
+        </a>
+      </li>
+    </ul>
+
+  </aside><!-- End Sidebar-->
+  <main id="main" class="main">
+    <div class="container mt-5">
+      <div class="pagetitle">
+          <h1>Preguntas Frecuentes</h1>
+      </div><!-- End Page Title -->
+      <section class="section faq">
+          <div class="row">
+              <div class="col-lg-6">
+                <div class="card basic">
+                    <div class="card-body">
+                        <h5 class="card-title">Preguntas Básicas</h5>
+                        <div>
+                            <h6>1. ¿Es doloroso el tratamiento dental?</h6>
+                            <p>La mayoría de los tratamientos dentales modernos no son dolorosos gracias a los avances en anestesia y técnicas mínimamente invasivas.</p>
+                        </div>
+                        <div class="pt-2">
+                            <h6>2. ¿Con qué frecuencia debo visitar al dentista?</h6>
+                            <p>Se recomienda visitar al dentista al menos dos veces al año para chequeos y limpiezas regulares.</p>
+                        </div>
+                        <div class="pt-2">
+                            <h6>3. ¿Cómo puedo prevenir las caries?</h6>
+                            <p>La prevención de caries incluye una buena higiene oral, una dieta balanceada y visitas regulares al dentista.</p>
+                        </div>
+                        <div class="pt-2">
+                            <h6>4. ¿Qué debo hacer si tengo sensibilidad dental?</h6>
+                            <p>Si experimentas sensibilidad dental, consulta con tu dentista para evaluar las causas y recibir recomendaciones específicas, como el uso de pastas dentales especializadas.</p>
+                        </div>
+                        <div class="pt-2">
+                            <h6>5. ¿Cuáles son los beneficios de usar enjuague bucal?</h6>
+                            <p>El enjuague bucal puede ayudar a reducir el riesgo de caries, refrescar el aliento y mantener las encías saludables, complementando la higiene oral diaria.</p>
+                        </div>
+                        <div class="pt-2">
+                            <h6>6. ¿Qué hacer si tengo un dolor de muelas?</h6>
+                            <p>Si tienes dolor de muelas, consulta a tu dentista lo antes posible para determinar la causa subyacente y recibir el tratamiento adecuado.</p>
+                        </div>
+                        <div class="pt-2">
+                            <h6>7. ¿Cuál es la mejor manera de cepillar los brackets?</h6>
+                            <p>Cepilla suavemente alrededor y sobre los brackets utilizando un cepillo de cerdas suaves y técnica adecuada para eliminar los residuos de alimentos y la placa.</p>
+                        </div>
+                        <div class="pt-2">
+                            <h6>8. ¿Es necesario usar un cepillo dental eléctrico?</h6>
+                            <p>Si bien no es necesario, un cepillo dental eléctrico puede ser más eficaz para algunas personas al proporcionar una limpieza más completa y adecuada.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                
+                  <!-- Grupo de Preguntas Frecuentes 1 -->
+                  <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tratamientos Comunes</h5>
+                
+                        <div class="accordion accordion-flush" id="faq-group-1">
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-1" type="button" data-bs-toggle="collapse">
+                                        ¿Qué es una limpieza dental profesional?
+                                    </button>
+                                </h2>
+                                <div id="faqsOne-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                                    <div class="accordion-body">
+                                        Una limpieza dental profesional elimina la placa y el sarro acumulados, ayudando a prevenir enfermedades gingivales y caries.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-2" type="button" data-bs-toggle="collapse">
+                                        ¿Qué es una caries y cómo se trata?
+                                    </button>
+                                </h2>
+                                <div id="faqsOne-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                                    <div class="accordion-body">
+                                        Una caries es una destrucción del diente causada por bacterias. Se trata removiendo la parte afectada y restaurando el diente con un empaste.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-3" type="button" data-bs-toggle="collapse">
+                                        ¿Qué son los empastes dentales y cuándo se utilizan?
+                                    </button>
+                                </h2>
+                                <div id="faqsOne-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                                    <div class="accordion-body">
+                                        Los empastes dentales son materiales utilizados para restaurar dientes dañados por caries o fracturas. Se colocan después de limpiar la cavidad afectada.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-4" type="button" data-bs-toggle="collapse">
+                                        ¿En qué consiste un tratamiento de conducto?
+                                    </button>
+                                </h2>
+                                <div id="faqsOne-4" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                                    <div class="accordion-body">
+                                        Un tratamiento de conducto se realiza para salvar un diente severamente dañado o infectado. Se limpia el conducto radicular y se sella para evitar futuras infecciones.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-5" type="button" data-bs-toggle="collapse">
+                                        ¿Cuándo se recomienda la extracción dental?
+                                    </button>
+                                </h2>
+                                <div id="faqsOne-5" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                                    <div class="accordion-body">
+                                        La extracción dental se recomienda cuando un diente está demasiado dañado para ser restaurado, o debido a problemas como el apiñamiento dental.
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </div>
+                <!-- End F.A.Q Group 1 -->
+                  <!-- Grupo de Preguntas Frecuentes 2 -->
+                  <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuidados y Mantenimiento</h5>
+                
+                        <div class="accordion accordion-flush" id="faq-group-2">
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsTwo-1" type="button" data-bs-toggle="collapse">
+                                        ¿Cómo debo cepillarme los dientes correctamente?
+                                    </button>
+                                </h2>
+                                <div id="faqsTwo-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                    <div class="accordion-body">
+                                        Cepíllese los dientes al menos dos veces al día con una pasta dental con flúor, usando una técnica adecuada para limpiar todas las superficies de los dientes.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsTwo-2" type="button" data-bs-toggle="collapse">
+                                        ¿Es importante usar hilo dental?
+                                    </button>
+                                </h2>
+                                <div id="faqsTwo-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                    <div class="accordion-body">
+                                        Sí, usar hilo dental ayuda a eliminar la placa y los restos de comida entre los dientes y debajo de la línea de las encías, donde el cepillo no puede llegar.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsTwo-3" type="button" data-bs-toggle="collapse">
+                                        ¿Cuál es la mejor forma de usar enjuague bucal?
+                                    </button>
+                                </h2>
+                                <div id="faqsTwo-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                    <div class="accordion-body">
+                                        Use enjuague bucal después de cepillarse los dientes para ayudar a reducir la placa y refrescar el aliento. Siga las instrucciones del fabricante para obtener los mejores resultados.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsTwo-4" type="button" data-bs-toggle="collapse">
+                                        ¿Qué hacer en caso de sensibilidad dental?
+                                    </button>
+                                </h2>
+                                <div id="faqsTwo-4" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                    <div class="accordion-body">
+                                        Si experimenta sensibilidad dental, use pasta dental especializada para dientes sensibles y evite alimentos y bebidas extremadamente calientes o fríos. Consulte a su dentista si persiste.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsTwo-5" type="button" data-bs-toggle="collapse">
+                                        ¿Cuál es la importancia de la alimentación para la salud dental?
+                                    </button>
+                                </h2>
+                                <div id="faqsTwo-5" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                    <div class="accordion-body">
+                                        Una alimentación equilibrada y baja en azúcares puede ayudar a prevenir caries y enfermedades periodontales. Consuma alimentos ricos en calcio y vitaminas para fortalecer los dientes y las encías.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsTwo-6" type="button" data-bs-toggle="collapse">
+                                        ¿Es necesario cambiar mi cepillo dental regularmente?
+                                    </button>
+                                </h2>
+                                <div id="faqsTwo-6" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                    <div class="accordion-body">
+                                        Sí, se recomienda cambiar su cepillo dental cada 3-4 meses o antes si las cerdas están desgastadas. Un cepillo desgastado puede no limpiar eficazmente los dientes y las encías.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-target="#faqsTwo-7" type="button" data-bs-toggle="collapse">
+                                        ¿Cómo puedo prevenir la enfermedad de las encías?
+                                    </button>
+                                </h2>
+                                <div id="faqsTwo-7" class="accordion-collapse collapse" data-bs-parent="#faq-group-2">
+                                    <div class="accordion-body">
+                                        Mantenga una buena higiene oral, incluyendo cepillado, uso de hilo dental y visitas regulares al dentista. La enfermedad de las encías puede prevenirse con una atención dental adecuada.
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                    </div>
+                </div>
+                <!-- End F.A.Q Group 2 -->
+              </div>
+          </div>
+      </section>
+  </div>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span> OralClinicPlus-2024</span></strong>. Todos los derechos reservados
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Desarrollado por <a href="">Carlos Eduardo Correa Baloco</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
